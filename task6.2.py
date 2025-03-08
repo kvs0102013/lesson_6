@@ -21,18 +21,31 @@
 #     meter +=10
 # print('Прошел дистанцию ', meter)
 
-number = int(input('Введите число  '))
-summ = 0 # Считаем сумму всех чисел до появления  5
-while number != 0:
-    last_num = number % 10
-    print(last_num)
-    if last_num == 5:
-        print('Обнаружен разрыв ')
-        break
-    summ += last_num
-    number = number // 10
-print('Сумма чисел равна  ', summ)    
+# number = int(input('Введите число  '))
+# summ = 0 # Считаем сумму всех чисел до появления  5
+# while number != 0:
+#     last_num = number % 10
+#     print(last_num)
+#     if last_num == 5:
+#         print('Обнаружен разрыв ')
+#         break
+#     summ += last_num
+#     number = number // 10
+# print('Сумма чисел равна  ', summ)    
 
+book_lib =int(input('Сколько книг выдал библиотекарь? '))
+book_watch = int(input('Сколько книг просмотрено? '))
+book_res = int(input('Сколько требует реставрации? '))
+summ_res = 0
+summ_res += book_res
+while summ_res < 5:
+    book_watch = int(input('Сколько книг просмотрено? '))
+    book_res = int(input('Сколько требует реставрации? '))
+    summ_res += book_res
+    print('Требует реставрации ', summ_res)
+    print('На сегодня все благодарю за помощь')
+print('Ура практика завершена')
+    
     
     
     
